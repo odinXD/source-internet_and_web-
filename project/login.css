@@ -1,0 +1,99 @@
+*{box-sizing: border-box;}
+
+/* 수도클래스 활용 */
+body:first-child{ 
+    margin:0 auto;
+}
+/* 수도클래스 활용 */
+body:nth-child(1){
+    margin:0 auto;
+} 
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+section {
+    justify-content: center;
+    align-items:center;
+    height: 500px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+
+#id{
+    height: 40px;
+    width: 200px;
+    margin-bottom: 10px;
+    border: solid 1px lightgray;
+    border-radius: 3px;
+    padding-left: 14px;
+    color: black;
+    font-size: 15px;
+    align-self:center;
+}
+
+#password{
+    height: 40px;
+    width: 200px;
+    margin-bottom: 10px;
+    border: solid 1px lightgray;
+    border-radius: 3px;
+    padding-left: 14px;
+    color: black;
+    font-size: 15px;
+    align-self:center;
+}
+
+#verify{
+    height: 40px;
+    width: 70px;
+    margin-bottom: 10px;
+    border: solid 1px lightgray;
+    border-radius: 3px;
+    padding-left: 14px;
+    color: black;
+    font-size: 15px;
+    align-self:left;
+}
+
+#vrfnumber{
+    height: 40px;
+    width: 170px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    padding-left: 14px;
+    color: black;
+    font-size: 10px;
+    align-self:center;
+    text-align: center;
+    margin : 0 auto;
+}
+
+#login{
+    height: 40px;
+    width: 70px;
+    margin-bottom: 10px;
+    border: solid 1px lightgray;
+    border-radius: 3px;
+    padding-left: 14px;
+    color: black;
+    font-size: 10px;
+    align-self:center;
+    text-align: center;
+    margin:0 auto;
+}
+
+
+.mainlogin {
+    width: 400px;
+    height: 300px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header>
+        <h1>Way To Go</h1>
+        <h2>(실시간 출근 상황)</h2>
+    </header>
+    <section class="mainlogin">
+        <input id="id" type="text" placeholder="id" /> <!--로그인 정보 입력받음 -->
+        <input id="password" type="password" placeholder="password" />
+        <input id="verify" type="text" placeholder="000" />
+        <p id = "vrfnumber"></p>
+        <button id="login" onclick="getLogin()" disabled ><b>login</b></button>
+    </section>
+    
+    <script src="button.js"></script>
+    <script src="random.js"></script>
+    <script src="login.js"></script>
+    
+
+    <table width="100" height="100" align="center">    <!--달력 제공하는 테이블 생성 -->
+        <tr><p><td colspan = "7" span align = "center">JUNE 2022</td></p>
+        </tr>
+       
+        <tr align="center">
+            <td><strong>S </strong></td>
+            <td><strong>M </strong></td>
+            <td><strong>T </strong></td>
+            <td><strong>W </strong></td>
+            <td><strong>T </strong></td>
+            <td><strong>F </strong></td>
+            <td><strong>S </strong></td>
+
+        </tr>
+        
+        <tr align = "center">
+            <td>&nbsp; </td>
+            <td>&nbsp; </td>
+            <td>&nbsp; </td>
+            <td>1 </td>
+            <td>2 </td>
+            <td>3 </td>
+            <td>4 </td>
+
+        </tr>
+
+        <tr align = "center">
+            <td>5 </td>
+            <td>6 </td>
+            <td>7 </td>
+            <td>8 </td>
+            <td>9 </td>
+            <td>10 </td>
+            <td>11 </td>
+        
+        </tr>
+
+        <tr align = "center">
+            <td>12 </td>
+            <td>13 </td>
+            <td>14 </td>
+            <td>15 </td>
+            <td>16 </td>
+            <td>17 </td>
+            <td>18 </td>
+        
+        </tr>
+
+        <tr align = "center">
+            <td>19 </td>
+            <td>20 </td>
+            <td>21 </td>
+            <td>22 </td>
+            <td>23 </td>
+            <td>24 </td>
+            <td>25 </td>
+
+        </tr align = "center">
+            <td>26 </td>
+            <td>27 </td>
+            <td>28 </td>
+            <td>29 </td>
+            <td>30 </td>
+            <td>&nbsp; </td>
+            <td>&nbsp; </td>
+
+    </table>
+
+
+</body>
+</html>

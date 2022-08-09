@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo</title>
+    <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c08aa09e8528e0c23e6e1a9fc4deb2f8"></script>
+    <script src = "https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="main.css">
+     
+</head>
+<body>
+    <header><h2>출근길 상황조회</h2></header> <!-- semantic(header)활용-->
+    <nav> <!-- semantic(nav)활용-->
+        <ul>
+        <li><a href = "#map">시작지점</a></li>
+        <li><a href = "#searchname">장소명 검색</a></li>
+        <li><a href = "#resultlist">검색 결과</a></li>
+        <li><a href = "#desinfo">도착지 정보</a></li>
+        </ul>
+    </nav>
+    <section id = "allbox"> <!-- semantic(section)활용-->
+
+        <section id = "box1">
+            
+            <div id = "map"></div>
+
+            <div id = "placename">
+                <input id="searchname" type="text" placeholder="장소명" /> <!--장소명 입력받음 -->
+                <button onclick = 'displayResponse()'>search</button>
+            </div>
+
+            <div id = "placenum">
+                <input id="searchnum" type="text" placeholder="검색할 장소 번호" /> <!--장소번호 입력받음 -->
+                <button onclick = 'resduration()'>Go</button>
+            </div>
+            
+            <div id = "resultlist">
+            </div>
+            
+        </section>
+        
+        <section id = "box2">
+            
+            <ul id = "desinfo"> <!-- 장소 정보 제공하는 리스트 생성-->
+                <li id = "duration"></li>
+                <li id = "weather"></li>
+                <li id = "temp"></li>
+            </ul>
+    
+        </section>
+
+        <section id = "box3">
+
+            <div id = "map2" ></div>
+            <a id = "roadview" href="">지도가 뜰때 클릭시 로드뷰로 안내합니다.</a>
+
+
+
+
+        </section>
+
+    </section>  
+
+
+    <footer> <!-- semantic(footer)활용-->
+        <p><i>copyright © 2022 이도영</i></p>
+    </footer>
+
+    <script src = "search.js"></script> 
+    <script src = "map1.js"></script>
+</body>
+</html>
